@@ -87,7 +87,7 @@
     conteo.textContent = `${res.length} de ${docentes.length} docentes`;
   }
 
-  fetch('datos/docentes.json')
+  fetch('datos/Docentes.json')
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(datos => {
       docentes = datos;
